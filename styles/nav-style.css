@@ -1,0 +1,127 @@
+body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+}
+p{
+    margin: 0px;
+}
+.select-nav{
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header{
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+    height: 60px;
+    width: 100%;
+    padding-left: 30px;
+    margin-bottom: 40px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.search-bar_finised-task_contener{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+    height: 30px;
+    border-radius: 15px;
+    padding: 0px 10px 0px 10px;
+    gap: 10px;
+}
+#search-bar{
+    border: none;
+    background-color: blueviolet;
+    color: white;
+}
+#search-bar::placeholder{
+    color: white;
+    opacity: 1;
+}
+.fa-search{
+    color: white;
+}
+
+.finished_task_container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;    
+}
+.finished_task_text_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.finished-task-text{
+    font-size: 24px;
+}
+.finished-task-pourcent{
+    font-size: 42px;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #progress-bar {
+    height: 10px;
+    background-color: #76c7c0; /* Première couleur */
+  }
+
+.task_action_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 4px solid blueviolet;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.sort-text{
+    font-size: 24px;
+}
+.sort_container{
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+    height: 30px;
+    border-radius: 15px;
+    padding: 0px 10px 0px 10px;
+    gap: 10px;
+}
+.text-input-select{
+    color: white;
+    font-size: 16px;
+}
+
+
+.add_new_task_button{
+    background-color: blueviolet;
+    height: 30px;
+    border-radius: 15px;
+    padding: 0px 10px 0px 10px;
+    border: none;
+    color: white;
+}

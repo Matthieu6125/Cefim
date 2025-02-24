@@ -1,0 +1,37 @@
+.form-style-aside{
+    display: flex;
+    height: auto;
+    padding: 30px 20px 30px 0px;
+    border-right: 3px solid blueviolet;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-form {
+    box-sizing: border-box;
+    width: 350px;
+    height: auto;
+    padding: 10px;
+    border: 3px solid blueviolet;
+}
+.input-form::placeholder {
+    color: black;
+}
+
+.textarea-description{
+    min-height: 100px;
+}
+
+.submit-form-new-task{
+    background-color: blueviolet;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    width: 40%;
+}
+
