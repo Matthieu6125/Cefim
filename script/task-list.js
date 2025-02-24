@@ -1,3 +1,4 @@
+import updateProgressBar from './finished-bar-tasks.js';
 
 let tasks = JSON.parse(localStorage.getItem("dataTask"))|| [];
 console.log("tasks", tasks);
@@ -85,6 +86,7 @@ function updateDisplay(tasks) {
             updateDisplay(tasks);
         }); 
     });
+    updateProgressBar();
 }
 
 
