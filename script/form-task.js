@@ -1,3 +1,4 @@
+import updateDisplay from "./task-list.js";
 
 document.getElementById("add_new_task_button").addEventListener("click", function () {
     const btnToDisplay = document.getElementById("add_new_task_button");
@@ -29,11 +30,9 @@ document.getElementById('form-task').addEventListener('submit', function(event) 
     const updateAfterForm = JSON.parse(localStorage.getItem("dataTask")); // récupérer les données actualisées
     console.log(updateAfterForm);
 
-    // création d'un appel à une fonction pour mettre à jour l'affichage de la liste des tâches
-    // updateDisplay(updateAfterForm);
+    // utilisation de la fonction d'actualisation importée de task-list.js
+    updateDisplay(updateAfterForm);
 })
-
-
 
 function SaveDataTask(data) {
     const dataTask = JSON.parse(localStorage.getItem("dataTask")) || []; // récupération ou création du tableau pour stocker les données

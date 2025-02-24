@@ -1,0 +1,84 @@
+.task-list-section{
+    display: flex;
+    flex: 1;
+    width: 65%;
+}
+
+#task-list-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.task-container{
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    margin: 10px 0px 10px;
+    padding: 0px 10px;
+}
+
+.task-info-container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    border-left: 2px solid blueviolet;
+    margin-left: 10px;
+}
+.task-title {
+    position: relative;
+    font-size: 24px;
+    color: blueviolet;
+    margin: 0px;
+    padding-left: 5px;
+    width: 100%;
+}
+.task-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+    height: 1px;
+    background-color: blueviolet;
+}
+
+.task-description{
+    width: auto;
+    font-size: 16px;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    margin-top: 15px;
+}
+
+.containerInfoPriority{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 100px;
+    height: 100%;
+}
+
+.fa-trash{
+    font-size: 30px;
+    color: blueviolet;
+}
+
+.priority-low{
+    background-color: green;
+}
+
+.priority-medium {
+    background-color: orange;
+}
+
+.priority-high {
+    background-color: red;
+}
