@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasky</title>
+</head>
+
+<body>
+    <header class="header">
+        <p>Tasky</p>
+    </header>
+
+    <nav>
+        <div class="search-bar_finised-task_contener">
+            <div class="search-bar">
+                <input type="text" id="search-bar" placeholder="rechercher une tâche"/>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="finished_task_container">
+                <div class="finished_task_text_container">
+                    <p class="finished-task-text">Tâches terminées</p>
+                    <p class="finished-task-pourcent" id="progress-text"></p>
+                </div>
+                <div class="progress-container">
+                    <div id="progress-bar" ></div>
+                </div>
+            </div>
+        </div>
+        <div class="task_action_container">
+            <div class="add_new_task_container">   
+                <button class="add_new_task_button" id="add_new_task_button"> Ajouter tâche</button>
+            </div>
+            <p class="sort-text">
+                Trier par:
+            </p>
+            <div class="sort_container">
+                <p class="text-input-select">Status:</p>
+                <select class="select-nav" id="sort-status">
+                    <option value="all">Toutes</option>
+                    <option value="ongoing_status">En cours</option>
+                    <option value="finished_status">Terminer</option>
+                </select>
+            </div>
+            <div class="sort_container">
+                <p class="text-input-select">Echéance:</p>
+                <select class="select-nav" id="sort-dating">
+                    <option value="no-deadline">Toutes</option>
+                    <option value="from_oldest_to_closest">Du plus lointain au plus proche</option>
+                    <option value="from_closest_to_oldest">Du plus proche au plus lointain</option>
+                </select>
+            </div>
+            
+        </div>
+    </nav>
+
+        
+    <main>
+        <aside class="form-style-aside" id="form-container" style="display: none;">
+            <form class="container-form" id="form-task">
+                <input class="input-form" type="text" name="input-title" placeholder="Nom de la tâche" required>
+                <textarea class="input-form textarea-description" name="textarea-description" placeholder="Entrer la description associée à la tâche" required></textarea>
+                <input class="input-form" type="date" name="input-date" placeholder="Entrer la date d'échéance de la tache">
+                <select class="input-form" name="priority" required>
+                    <option disabled selected>Sélectionner la priorité de la tâches</option>
+                    <option value="Basse">Basse</option>
+                    <option value="Moyenne">Moyenne</option>
+                    <option value="Haute">Haute</option>
+                </select>
+                <button class="submit-form-new-task" type="submit">Valider</button>
+            </form>
+        </aside>
+        <section class="task-list-section">
+            <ul id="task-list-container"></ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Tasky</p>
+        <p>@copyright 2025</p>
+    </footer>
+</body>
+</html>
